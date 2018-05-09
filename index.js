@@ -1,7 +1,8 @@
 'use strict';
 
-var hljs = require('highlight.js');
-// import hljs from 'highlight.js';
+var hljs = require('highlight.js/lib/highlight');
+var javascript = require('highlight.js/lib/languages/javascript');
+hljs.registerLanguage('javascript', javascript);
 
 var vueHighlightJS = {};
 vueHighlightJS.install = function install(Vue) {
